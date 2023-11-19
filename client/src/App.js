@@ -12,7 +12,7 @@ function App() {
       
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Homepage />} />
             {/* user && user._id ? <Homepage setLoginUser={setLoginUser} /> : <Login setLoginUser={setLoginUser} />} /> */}
           <Route path="/login" element={<Login setLoginUser={setLoginUser} />} />
           <Route path="/register" element={<Register />} />
