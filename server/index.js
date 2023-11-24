@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
+import expenseRoutes from "./routes/expenses.js";
+import tripRoutes from "./routes/trips.js"
 
 const app = express();
 app.use(express.json());
@@ -74,6 +76,10 @@ app.post("/register", async (req, res) => {
     res.status(500).send({ error: "An error occurred while registering the user" });
   }
 });
+
+app.use('/expenses', expenseRoutes);
+app.use('/trips', tripRoutes);
+
 
 app.listen(9002, () => {
   console.log("Server is running on port 9002");

@@ -1,0 +1,65 @@
+/* src/components/ExpenseList/ExpenseList.css */
+/* src/components/ExpenseList/ExpenseList.css */
+.ExpenseList {
+    /* Style for the ExpenseList container */
+    width: 80%;
+    margin: auto;
+  }
+  
+  .expense-item {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+
+
+  /* Style for the ExpenseList title */
+  .ExpenseList h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the loading message */
+  .ExpenseList p {
+    color: #888;
+  }
+  
+  /* Style for the expense items in the list */
+  .ExpenseList ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ExpenseList li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    padding: 10px;
+  }
+  
+  .ExpenseList li strong {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Style for the amount and date in each expense item */
+  .ExpenseList li span {
+    color: #666;
+  }
+  
+ 
+  .delete-btn {
+    cursor: pointer;
+    background-color: #00bcd4;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .delete-btn:hover{
+    background-color: #0097a7;
+  }
+  
